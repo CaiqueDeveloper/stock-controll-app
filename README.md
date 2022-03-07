@@ -13,9 +13,7 @@ BIBLIOTECAS
 
 FASE DO PROJETO
 
-<p> -[X] CRIAR AQUITETURA BASE</p>
-<p> -[X] CRIAR CONEXÃO COM A BASE DE DADOS DO (FIREBIRD)</p>
-<p> -[X] CRIAR ROTAS PRINCIPAIS</p>
-<p> -[] CRIAR TABLEAS DE USER E PRODUCTS</p>
-<p> -[] CRIAR REGRA DE AUTHENTICATE</p>
-<p> -[] CRIAR TELA DE LOGIN</p>
+- [ ] Comprar arroz
+- [ ] Comprar feijão
+- [ ] Comprar batata
+- [x] Comprar macarrão
