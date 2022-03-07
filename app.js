@@ -12,10 +12,10 @@ options.password = 'masterkey';
 app.get('/',(request,response) =>{
     
     firebird.attach(options, function(err, db) {
-        
-        db.query('SELECT * FROM PERSON', function(err, result) {
-            response.send("Hello dentro da function 1")
-            // response.send(result)
+          response.send(options)
+        //db.query('SELECT * FROM PERSON', function(err, result) {
+           // response.send("Hello dentro da function 1")
+           
             
             // for (let i = 0; i < result.length; i++) {                        
             //     for (const [key, value] of Object.entries(result[i])) {
@@ -27,7 +27,7 @@ app.get('/',(request,response) =>{
             // console.log(result)
             // return response.json(result)
             // db.detach();
-        });
+       // });
     })
 })
 app.listen(port, () => {
