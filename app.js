@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000
  
 //starting database connection variables
 var options = {};
-options.host =  '127.0.0.1',
+options.host =  '192.168.1.111',
 options.port =  3050,
 options.database = 'C:/TESTE/DATABASE.FDB';
 options.user = 'SYSDBA';
