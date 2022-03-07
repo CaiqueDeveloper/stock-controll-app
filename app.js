@@ -15,18 +15,18 @@ app.get('/',(request,response) =>{
         
         db.query('SELECT * FROM PERSON', function(err, result) {
             response.send("Hello dentro da function 1")
-            response.send(result)
+            // response.send(result)
             
-            for (let i = 0; i < result.length; i++) {                        
-                for (const [key, value] of Object.entries(result[i])) {
-                    if(Buffer.isBuffer(value)){
-                    result[i][key] =  `${value}`; 
-                    }
-                }
-            }
-            console.log(result)
-            return response.json(result)
-            db.detach();
+            // for (let i = 0; i < result.length; i++) {                        
+            //     for (const [key, value] of Object.entries(result[i])) {
+            //         if(Buffer.isBuffer(value)){
+            //         result[i][key] =  `${value}`; 
+            //         }
+            //     }
+            // }
+            // console.log(result)
+            // return response.json(result)
+            // db.detach();
         });
     })
 })
