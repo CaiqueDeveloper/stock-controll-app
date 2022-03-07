@@ -10,7 +10,7 @@ options.user = 'SYSDBA';
 options.password = 'masterkey';
 
 app.get('/',(request,response) =>{
-    response.send('Hello World!')
+    response.send("Hello")
     // firebird.attach(options, function(err, db) {
     //     db.query('SELECT * FROM PERSON', function(err, result) {
             
@@ -23,9 +23,9 @@ app.get('/',(request,response) =>{
     //         }
     //         console.log(result)
     //         return response.json(result)
-            db.detach();
-        });
-    })
+    //         db.detach();
+    //     });
+    // })
 })
 app.listen(port, () => {
     console.log(`O Servidor está rodando na porta ${port}`)
