@@ -4,8 +4,8 @@
   "description": "Essa é uma base de uma app para gestão de estoque",
   "main": "index.js",
   "scripts": {
-    "nodemon-dev": "nodemon app.js",
-    "start": "node app.js"
+    "nodemon-dev": "nodemon app",
+    "start": "node app"
   },
   "author": "Caique B.Santos - CbSoftware",
   "license": "MIT",
