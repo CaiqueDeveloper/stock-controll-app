@@ -10,7 +10,7 @@ options.user = 'SYSDBA';
 options.password = 'masterkey';
 
 app.get('/',(request,response) =>{
-    return response.json({hello: 'Hello'})
+    response.send('Hello World!')
     // firebird.attach(options, function(err, db) {
     //     db.query('SELECT * FROM PERSON', function(err, result) {
             
