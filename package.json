@@ -1,0 +1,16 @@
+{
+  "name": "stock-control-app",
+  "version": "1.0.0",
+  "description": "Essa é uma base de uma app para gestão de estoque",
+  "main": "index.js",
+  "scripts": {
+    "nodemon-dev": "nodemon app.js"
+  },
+  "author": "Caique B.Santos - CbSoftware",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.3",
+    "node-firebird": "^1.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
