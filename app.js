@@ -10,22 +10,23 @@ options.user = 'SYSDBA';
 options.password = 'masterkey';
 
 app.get('/',(request,response) =>{
-    response.send("Hello")
-    // firebird.attach(options, function(err, db) {
-    //     db.query('SELECT * FROM PERSON', function(err, result) {
+    
+    firebird.attach(options, function(err, db) {
+        response.send("Hello dentro da function")
+        // db.query('SELECT * FROM PERSON', function(err, result) {
             
-    //         for (let i = 0; i < result.length; i++) {                        
-    //             for (const [key, value] of Object.entries(result[i])) {
-    //                 if(Buffer.isBuffer(value)){
-    //                 result[i][key] =  `${value}`; 
-    //                 }
-    //             }
-    //         }
-    //         console.log(result)
-    //         return response.json(result)
-    //         db.detach();
-    //     });
-    // })
+        //     for (let i = 0; i < result.length; i++) {                        
+        //         for (const [key, value] of Object.entries(result[i])) {
+        //             if(Buffer.isBuffer(value)){
+        //             result[i][key] =  `${value}`; 
+        //             }
+        //         }
+        //     }
+        //     console.log(result)
+        //     return response.json(result)
+        //     db.detach();
+        // });
+    })
 })
 app.listen(port, () => {
     console.log(`O Servidor está rodando na porta ${port}`)
