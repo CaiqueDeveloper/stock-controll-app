@@ -6,12 +6,14 @@ const port = process.env.PORT || 3000
  
 //starting database connection variables
 var options = {};
+options.host =  '127.0.0.1',
+options.port =  3050,
 options.database = 'C:/TESTE/DATABASE.FDB';
 options.user = 'SYSDBA';
 options.password = 'masterkey';
 
 app.get('/',(request,response) =>{
-    
+
     firebird.attach(options, function(err, db) {
         db.query('SELECT * FROM PERSON', function(err, result) {   
            
