@@ -12,7 +12,7 @@ options.password = 'masterkey';
 app.get('/',(request,response) =>{
     
     firebird.attach(options, function(err, db) {
-          response.send(options)
+          response.send(db)
         //db.query('SELECT * FROM PERSON', function(err, result) {
            // response.send("Hello dentro da function 1")
            
