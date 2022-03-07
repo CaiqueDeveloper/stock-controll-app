@@ -21,6 +21,7 @@ app.get('/',(request,response) =>{
                     }
                 }
             }
+            console.log(result)
             return response.json(result)
             db.detach();
         });
