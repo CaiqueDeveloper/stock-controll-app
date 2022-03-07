@@ -10,19 +10,19 @@ options.user = 'SYSDBA';
 options.password = 'masterkey';
 
 app.get('/',(request,response) =>{
-    
-    firebird.attach(options, function(err, db) {
-        db.query('SELECT * FROM PERSON', function(err, result) {
+    return response.json({hello: 'Hello'})
+    // firebird.attach(options, function(err, db) {
+    //     db.query('SELECT * FROM PERSON', function(err, result) {
             
-            for (let i = 0; i < result.length; i++) {                        
-                for (const [key, value] of Object.entries(result[i])) {
-                    if(Buffer.isBuffer(value)){
-                    result[i][key] =  `${value}`; 
-                    }
-                }
-            }
-            console.log(result)
-            return response.json(result)
+    //         for (let i = 0; i < result.length; i++) {                        
+    //             for (const [key, value] of Object.entries(result[i])) {
+    //                 if(Buffer.isBuffer(value)){
+    //                 result[i][key] =  `${value}`; 
+    //                 }
+    //             }
+    //         }
+    //         console.log(result)
+    //         return response.json(result)
             db.detach();
         });
     })
