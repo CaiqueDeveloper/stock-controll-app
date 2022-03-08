@@ -6,7 +6,9 @@ const port = process.env.PORT || 3000
  
 //starting database connection variables
 var options = {};
-options.database = 'http://192.168.1.70:888/DB/DATABASE.FDB';
+options.host = '192.168.1.70'
+options.port = '3050'
+options.database = 'C:/xampp/htdocs/DB/DATABASE.FDB';
 options.user = 'SYSDBA';
 options.password = 'masterkey';
 
