@@ -2,13 +2,12 @@ const express = require('express')
 const firebird = require('node-firebird')
 fs = require('fs')
 const app = express()
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3050
  
 //starting database connection variables
 var options = {};
-options.host = '192.168.1.70'
-options.port = '3050'
-options.database = 'C:/xampp/htdocs/DB/DATABASE.FDB';
+
+options.database = 'C:/TESTE/DATABASE.FDB';
 options.user = 'SYSDBA';
 options.password = 'masterkey';
 
